@@ -30,5 +30,5 @@ document.querySelectorAll("#Completed-btn").forEach(button => {
         
 
 
-    });
-});
+    })
+})
