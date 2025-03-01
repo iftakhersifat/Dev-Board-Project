@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="flex-none bg-[#F4F7FF] p-2 rounded-3xl ml-8">
+            <div id="themeButton" class="flex-none bg-[#F4F7FF] p-2 rounded-3xl ml-8">
                 <img class="rounded-full" src="assets/theme-btn.png" alt="">
               </div>
           </div>
@@ -225,9 +225,14 @@
     <script>
       document.getElementById("discoverMore").addEventListener("click", function(event){
         event.preventDefault();
-        window.location.href="discover-more.html"
+        window.location.href="discover-more.html";
 
       })
+
+      const colors = ["blue", "green", "red", "yellow", "sky", "pink", "violet"];
+    document.getElementById("themeButton").onclick = function () {
+        document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    };
     </script>
 </body>
 </html>
