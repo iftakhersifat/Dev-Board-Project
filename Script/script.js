@@ -1,5 +1,5 @@
-let taskCount = 6;
-let checkboxCount = 24; 
+let remainingTasks = 6;
+let completedSteps = 24; 
 
 document.querySelectorAll("#Completed-btn").forEach(button => {
     button.addEventListener("click", function (event) {
@@ -12,14 +12,15 @@ document.querySelectorAll("#Completed-btn").forEach(button => {
 
         alert("Board updated Successfully"); 
         
-        if (taskCount > 0) {
-            taskCount -= 1;
-            document.querySelector(".countTask").innerText = taskCount;
-        }
-        checkboxCount += 1;
-        document.querySelector(".countCheckbox").innerText = checkboxCount;
+        if (remainingTasks > 0) {
+            remainingTasks -= 1;
+            document.querySelector(".countTask").innerText = remainingTasks;
 
-        // this.style.display = "none";
+             
+        }
+        completedSteps += 1;
+        document.querySelector(".countCheckbox").innerText = completedSteps;
+
         this.disabled = true;
 
         const activityLogContainer = document.querySelector(".activity-log");

@@ -29,14 +29,63 @@
                 <div class="flex-1">
                     <h1 class="ml-2 text-3xl">Dev<span class="font-bold">Board</span></h1>
                 </div>
-                <div class="bg-[#F4F7FF] py-2 px-3 rounded-3xl">
                     <div class="flex-none ">
                         <button id="back-btn" class="btn bg-[#3752FD] text-white px-4 py-2">Back to Desk</button>
                     </div>
-                </div>
+                
               </div>
         </nav>
     </header>
+    <main class="container mx-auto">
+        <h1 class="text-2xl font-bold text-center mb-8">Blogs</h1>
+
+        <!-- 1st question -->
+         <div class="bg-white rounded-xl p-6 mb-5">
+            <h1 class="font-bold mb-3">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-dashed border-gray-200 border-t-2">
+            <p class="mt-3 text-gray-500">1. getElementsByTagName() <br>
+                2. getElementsByClassName() <br>
+                3. getElementById() <br>
+                4. querySelector() <br>
+                5. querySelectorAll()</p>
+         </div>
+        <!-- 2nd question -->
+         <div class="bg-white rounded-xl p-6  mb-5">
+            <h1 class="font-bold mb-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <hr class="border-dashed border-gray-200 border-t-2">
+            <p class="mt-3 text-gray-500">innerHTML use when we need HTML tags. <br>
+                innerText use when we want only visible text. <br>
+                textContent use when we want all text.</p>
+         </div>
+        <!-- 3rd question -->
+         <div class="bg-white rounded-xl p-6  mb-5">
+            <h1 class="font-bold mb-3">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-dashed border-gray-200 border-t-2">
+            <p class="mt-3 text-gray-500">Event delegation means instead of adding events to each button, add one event to the parent.</p>
+         </div>
+        <!-- 4th question -->
+         <div class="bg-white rounded-xl p-6  mb-5">
+            <h1 class="font-bold mb-3">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-dashed border-gray-200 border-t-2">
+            <p class="mt-3 text-gray-500">Event bubbling means an event starts from the child element and moves up to the parent elements in the DOM</p>
+         </div>
+        <!-- 5th question -->
+         <div class="bg-white rounded-xl p-6  mb-5">
+            <h1 class="font-bold mb-3">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-dashed border-gray-200 border-t-2">
+            <p class="mt-3 text-gray-500">1.Create an element: <br>
+                const newDiv = document.createElement('div');
+                newDiv.textContent = "Hi friend! I'm DOM. ";
+                newDiv.classList.add('my-class'); <br>
+                2.Add and element: <br>
+                const parent = document.getElementById('container');
+                parent.appendChild(newDiv); <br>
+                2.Remove an element: <br>
+                parent.removeChild(newDiv);
+                newDiv.remove(); 
+            </p>
+         </div>
+    </main>
     
     <script>
         document.getElementById("back-btn").addEventListener("click", function(){

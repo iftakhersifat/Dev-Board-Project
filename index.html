@@ -63,7 +63,7 @@
                     </div>
             
                     <!-- 2nd box -->
-                    <div id="discoverMore" class="-ml-[118px] bg-gradient-to-r from-[#5B82F3] to-[#8CA6F8] w-[600px] flex justify-center items-center p-4 rounded-2xl text-white shadow-md space-x-12">
+                    <div id="discoverMore" class="-ml-[118px] bg-gradient-to-r from-[#3461C1] to-[#6C92FA] w-[600px] flex justify-center items-center p-4 rounded-2xl text-white shadow-md space-x-12">
         
                         <div class="flex items-center gap-3">
                             <img class="w-[80px]" src="assets/board.png" alt="Board Icon">
@@ -82,8 +82,8 @@
                         </div>
                         <!-- Text -->
                         <div>
-                            <h1 class="text-gray-600 text-sm">Wed ,</h1>
-                            <h1 class="text-lg font-bold text-gray-800">Jul 28 2025</h1>
+                            <h1 id="day" class="text-gray-600 text-sm">Wed ,</h1>
+                            <h1 id="date" class="text-lg font-bold text-gray-800">Jul 28 2025</h1>
                         </div>
                     </div>
                 </div>
@@ -221,6 +221,7 @@
     
     <script src="Script/script.js"></script>
     <script src="Script/remove-history.js"></script>
+    <script src="Script/date-cng.js"></script>
 
     <script>
       document.getElementById("discoverMore").addEventListener("click", function(event){
