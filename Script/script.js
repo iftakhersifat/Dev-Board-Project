@@ -16,7 +16,9 @@ document.querySelectorAll("#Completed-btn").forEach(button => {
             remainingTasks -= 1;
             document.querySelector(".countTask").innerText = remainingTasks;
 
-             
+            if (remainingTasks === 0) {
+                alert("Congratulations! You have completed all tasks!");
+            }    
         }
         completedSteps += 1;
         document.querySelector(".countCheckbox").innerText = completedSteps;
